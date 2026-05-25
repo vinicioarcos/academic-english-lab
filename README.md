@@ -118,7 +118,7 @@ Academic English Lab can be deployed directly to Vercel in a few clicks:
 3. In Vercel Project Settings:
    - **Framework Preset:** Next.js
    - **Root Directory:** `apps/web` (This is critical since it is a monorepo setup)
-   - **Build Command:** `next build`
+   - **Build Command:** `npm run build`
    - **Output Directory:** `.next`
    - **Install Command:** `npm install`
 4. Add the required Environment Variables in Vercel's dashboard (`AI_PROVIDER`, `OPENAI_API_KEY`, `GEMINI_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, etc.).

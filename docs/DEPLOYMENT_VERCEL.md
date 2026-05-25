@@ -35,7 +35,7 @@ Dado que la aplicación Next.js reside en la subcarpeta `apps/web`, es fundament
 
 En la mayoría de los casos, Vercel sobrescribirá de forma óptima los comandos. No obstante, asegúrate de que tengan los siguientes valores:
 
-- **Build Command:** `next build` (o selecciona *Override* y escribe `npm run build`).
+- **Build Command:** `npm run build` (o `next build`).
 - **Output Directory:** `.next` (Directorio de salida por defecto de Next.js).
 - **Install Command:** `npm install` (o `yarn install` / `pnpm install` si cambias de gestor de paquetes).
 

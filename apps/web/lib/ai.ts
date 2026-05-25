@@ -46,7 +46,7 @@ Devuelve estrictamente un objeto JSON que cumpla el siguiente esquema de TypeScr
 
 Crucial: Devuelve solo el JSON válido, sin delimitadores de markdown (\`\`\`json). Las explicaciones y feedbacks deben estar en español.`;
 
-  if (provider === "google" && geminiKey) {
+  if ((provider === "google" || provider === "gemini") && geminiKey) {
     try {
       const response = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${geminiKey}`,
@@ -201,7 +201,7 @@ Devuelve estrictamente un objeto JSON que cumpla el siguiente esquema de TypeScr
 
 Crucial: Devuelve solo el JSON válido, sin delimitadores de markdown (\`\`\`json). Las explicaciones y feedbacks deben estar en español.`;
 
-  if (provider === "google" && geminiKey) {
+  if ((provider === "google" || provider === "gemini") && geminiKey) {
     try {
       const response = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${geminiKey}`,
@@ -352,7 +352,7 @@ Genera materiales de aprendizaje estructurados y bilingües. Devuelve estrictame
 
 Crucial: Devuelve solo el JSON válido, sin delimitadores de markdown (\`\`\`json). Las explicaciones, resúmenes y feedbacks deben estar en español.`;
 
-  if (provider === "google" && geminiKey) {
+  if ((provider === "google" || provider === "gemini") && geminiKey) {
     try {
       const response = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${geminiKey}`,
